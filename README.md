@@ -4,7 +4,7 @@ DNS-Scripts was created to simplify the process of dynamic DNS updates with cert
 ## Requirements/Dependencies
 Debian/Ubuntu/Raspbian
 Python 2
-python-requests, python-netifaces
+python-requests, python-netifaces (Handled during the install process)
 
 ## Usage
 1. Download [Zip archive](https://github.com/rohankapoorcom/dns-scripts/archive/master.zip) and Unzip
