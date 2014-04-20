@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 if [[ $UID != 0 ]]; then
     echo "Please run this script with sudo:"
@@ -11,7 +11,7 @@ SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "Installing DNS-Scripts"
 
-echo "URL For Afraid.org Dynamic Update"
+echo "Paste in URL For Afraid.org Dynamic Update:"
 read PROVIDED_URL
 sed -i -e 's/blah/$PROVIDED_URL' $SCRIPT_DIRECTORY/ddns/ddns.py
 
