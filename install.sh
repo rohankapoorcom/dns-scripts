@@ -17,7 +17,9 @@ sed -i -e 's/blah/$PROVIDED_URL/' $SCRIPT_DIRECTORY/ddns/ddns.py
 
 echo "Copying dns from $SCRIPT_DIRECTORY to /etc/init.d/"
 cp $SCRIPT_DIRECTORY/dns /etc/init.d/dns
+chmod +x /etc/init.d/dns
 
 echo "Copying ddns.py from $SCRIPT_DIRECTORY/ddns to /etc/ddns/ddns.py"
 mkdir -p /etc/ddns/
 cp $SCRIPT_DIRECTORY/ddns/ddns.py /etc/ddns/ddns.py
+chmod +x /etc/ddns/ddns.py
