@@ -1,0 +1,19 @@
+#! /bin/sh
+# /etc/init.d/dns
+
+# The following part always gets executed.
+
+# The following part carries out specific functions depending on arguments.
+case "$1" in
+  start)
+    echo "Starting DNS Update"
+	/etc/ddns/ddns.py
+    echo "Finished DNS Update"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/dns {start}"
+    exit 1
+    ;;
+esac
+
+exit 0
