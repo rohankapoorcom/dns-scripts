@@ -16,7 +16,7 @@ echo "Installing DNS-Scripts"
 
 echo "Paste in URL For Afraid.org Dynamic Update:"
 read PROVIDED_URL
-sed -i -e "s/blah/$PROVIDED_URL/" $SCRIPT_DIRECTORY/ddns/ddns.py
+sed -i -e s/blah/"$PROVIDED_URL"/ $SCRIPT_DIRECTORY/ddns/ddns.py
 
 echo "Copying dns from $SCRIPT_DIRECTORY to /etc/init.d/"
 cp $SCRIPT_DIRECTORY/dns /etc/init.d/dns
