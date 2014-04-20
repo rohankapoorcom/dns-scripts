@@ -9,6 +9,9 @@ fi
 # Get the current directory of the install script
 SCRIPT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+echo "Installing Dependencies"
+apt-get install python-requests python-netifaces
+
 echo "Installing DNS-Scripts"
 
 echo "Paste in URL For Afraid.org Dynamic Update:"
